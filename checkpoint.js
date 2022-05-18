@@ -63,7 +63,13 @@ function microOndas(opcao, tempo) {
     return `${mensagem02}`;
   } else if (opcao === 5 && tempo < tempoBrigadeiro) {
     return `${mensagem03}`;
-  } else {
+  } else if (
+    opcao !== 1 ||
+    opcao !== 2 ||
+    opcao !== 3 ||
+    opcao !== 4 ||
+    opcao !== 5
+  ) {
     return `${opcaoInvalida}`;
   }
 }
