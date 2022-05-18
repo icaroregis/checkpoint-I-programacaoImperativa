@@ -31,6 +31,7 @@ function microOndas(opcao, tempo) {
   const mensagem01 = `A comida queimou!!! Prato pronto, bom apetite!!!`;
   const mensagem02 = `kabumm!!! Prato pronto, bom apetite!!!`;
   const mensagem03 = `Tempo insuficiente!!! Prato pronto, bom apetite!!!`;
+  const mensagem04 = `Prato pronto, bom apetite!!!`;
   const opcaoInvalida = 'Prato inexistente';
 
   if (opcao === 1 && tempo === tempoPipoca * 2) {
@@ -39,30 +40,40 @@ function microOndas(opcao, tempo) {
     return `${mensagem02}`;
   } else if (opcao === 1 && tempo < tempoPipoca) {
     return `${mensagem03}`;
+  } else if (opcao === 1 && tempo > tempoPipoca) {
+    return `${mensagem04}`;
   } else if (opcao === 2 && tempo === tempoMacarrao * 2) {
     return `${mensagem01}`;
   } else if (opcao === 2 && tempo === tempoMacarrao * 3) {
     return `${mensagem02}`;
   } else if (opcao === 2 && tempo < tempoMacarrao) {
     return `${mensagem03}`;
+  } else if (opcao === 2 && tempo > tempoMacarrao) {
+    return `${mensagem04}`;
   } else if (opcao === 3 && tempo === tempoCarne * 2) {
     return `${mensagem01}`;
   } else if (opcao === 3 && tempo === tempoCarne * 3) {
     return `${mensagem02}`;
   } else if (opcao === 3 && tempo < tempoCarne) {
     return `${mensagem03}`;
+  } else if (opcao === 3 && tempo > tempoCarne) {
+    return `${mensagem04}`;
   } else if (opcao === 4 && tempo === tempoFeijao * 2) {
     return `${mensagem01}`;
   } else if (opcao === 4 && tempo === tempoFeijao * 3) {
     return `${mensagem02}`;
   } else if (opcao === 4 && tempo < tempoFeijao) {
     return `${mensagem03}`;
+  } else if (opcao === 4 && tempo > tempoFeijao) {
+    return `${mensagem04}`;
   } else if (opcao === 5 && tempo === tempoBrigadeiro * 2) {
     return `${mensagem01}`;
   } else if (opcao === 5 && tempo === tempoBrigadeiro * 3) {
     return `${mensagem02}`;
   } else if (opcao === 5 && tempo < tempoBrigadeiro) {
     return `${mensagem03}`;
+  } else if (opcao === 5 && tempo > tempoBrigadeiro) {
+    return `${mensagem04}`;
   } else if (
     opcao !== 1 ||
     opcao !== 2 ||
