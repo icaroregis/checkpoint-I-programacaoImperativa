@@ -32,7 +32,7 @@ function microOndas(opcao, tempo) {
   const mensagem02 = `kabumm!!! Prato pronto, bom apetite!!!`;
   const mensagem03 = `Tempo insuficiente!!! Prato pronto, bom apetite!!!`;
   const mensagem04 = `Prato pronto, bom apetite!!!`;
-  const opcaoInvalida = 'Prato inexistente';
+  const opcaoInvalida = `Prato inexistente`;
 
   if (opcao === 1 && tempo >= tempoPipoca * 2) {
     return `${mensagem01}`;
