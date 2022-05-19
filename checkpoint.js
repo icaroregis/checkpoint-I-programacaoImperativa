@@ -15,6 +15,7 @@
 // - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".
 
 // Resposta =>
+// opções de cada refeição
 // 1 - Pipoca – 10 segundos (padrão);
 // 2 - Macarrão – 8 segundos (padrão);
 // 3 - Carne – 15 segundos (padrão);
@@ -22,6 +23,7 @@
 // 5 - Brigadeiro – 8 segundos (padrão);
 
 function microOndas(opcao, tempo) {
+  //tempo de cada refeição
   const tempoPipoca = 10;
   const tempoMacarrao = 8;
   const tempoCarne = 15;
@@ -85,4 +87,4 @@ function microOndas(opcao, tempo) {
   }
 }
 
-console.log(microOndas(10, 22));
+console.log(microOndas(2, 10));
