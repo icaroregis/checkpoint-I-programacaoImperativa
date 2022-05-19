@@ -76,15 +76,9 @@ function microOndas(opcao, tempo) {
     return `${mensagem03}`;
   } else if (opcao === 5 && tempo > tempoBrigadeiro) {
     return `${mensagem04}`;
-  } else if (
-    opcao !== 1 ||
-    opcao !== 2 ||
-    opcao !== 3 ||
-    opcao !== 4 ||
-    opcao !== 5
-  ) {
+  } else {
     return `${opcaoInvalida}`;
   }
 }
 
-console.log(microOndas(2, 10));
+console.log(microOndas(10, 5));
